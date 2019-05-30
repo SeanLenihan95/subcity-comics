@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>Your Cart | Sub-City Comics</title>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Sean Lenihan" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Sub-City Comics shopping cart" />
+		<meta name="keywords" content="comics, sub-city, irish, order, shopping cart, reliable, cheap." />
+		<meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+		<link type="text/css" rel="stylesheet" href="css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="css/cart.css" />
+		<link type="text/css" rel="stylesheet" href="css/cart-responsive.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Corbel" />
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />	
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="https://use.typekit.net/jwp3qzx.css" />	
+		<link type="text/css" rel="stylesheet" href="css/lightbox.css" >
+	</head>
+	<body onload="QuantityCalc1();QuantityCalc2();QuantityCalc3();CartValueCalc();calc();">
+		<div id="header1" class="insidewrap clearfix">
+			<a href="index.html"><img src="images/final-logo2.jpg" id="main-logo" alt="Sub-City Comics logo" class="floatleft" width= "224" /></a>			
+			<div id="social-media">
+				<a href="https://www.facebook.com/subcity.comics.5/"><img src="images/facebook-icon.png" alt="Facebook symbol" /></a>
+				<a href="https://twitter.com/subcity_comics?lang=en"><img src="images/twitter-icon.png" alt="Twitter symbol" /></a>
+				<a href="https://www.instagram.com/subcity_comics/?hl=en"><img src="images/instagram-icon.png" alt="Instagram symbol" /></a>					
+			</div>
+			<div id="search-bar">
+				<form action="search.php" method="post">
+					<input type="text" id="searchBar" placeholder="" value="Search..." maxlength="30" autocomplete="off" onMouseDown="active();" onBlur="inactive();" /><input type="submit" id="searchBtn" value="Search" />
+				</form>
+			</div>
+		</div>
+		<div id="header2">
+			<div class="insidewrap clearfix">
+				<h1 class="floatleft main-header">Sub-City Comics</h1>
+				<div class="nav">
+					<label for="toggle">&#9776;</label>
+					<input type="checkbox" id="toggle" />
+					<div class="menu">
+					<ul class="floatright">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Forums</a></li>
+						<li><a href="gallery.html">Categories</a></li>
+						<li><a href="testimonials.html">Contact</a></li>
+						<li><a href="testimonials.html" id="no-border">Log in</a></li>
+						<li id="cart-li"><a href="cart.html"><img src="images/cart.png" alt="Cart symbol" class="no-mobile" /></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div id="top-nav" class="insidewrap clearfix">
+			<figure class="floatleft">
+				<a href="product.html"><img src="images/continue-shopping-arrow.png" alt="Left arrow" class="floatleft" /></a>
+				<figcaption><a href="product.html">Continue Shopping</a></figcaption>
+			</figure>
+			<p class="floatright">0860276448</p>
+			<p class="floatright" id="help">Need Our Help?</p>
+		</div>
+		<div id="main-table" class="insidewrap">
+			<h1 class="floatleft">Your Shopping Cart</h1>
+			<a href="#" onclick="QuantityCalc2();QuantityCalc1();QuantityCalc3();CartValueCalc();calc()" class="floatright">Update Cart</a>
+			<table>
+			  <tr>
+				<th id="th-products">Your Products</th>
+				<th>Quantity</th>
+				<th id="price-header">Price</th>
+			  </tr>
+			  <tr>
+				<td class="image-box">
+					<img src="images/wolverine-1.jpg" alt="Wolverine comic" />
+					<div class="info-1">
+						<p>Return of Wolverine - Issue #2</p>
+					</div>
+					<div class="info-2">
+						<p>Marvel Comics
+						<br>
+						Charles Soule, Declan Shalvey
+						<br>
+						2018</p>
+					</div>
+					<div class="info-3">
+						<p class="floatleft">Product Code: 19034837</p>
+						<a class="floatright" href="#">Remove</a>
+					</div>
+				</td>
+				<td class="quantity-box">
+					<div class="quantity-selector">
+						<div class="quantity buttons_added">
+							<input type="button" value="-" class="minus"><input type="number" step="1" min="1" id="quantity-input-1" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"><input type="button" value="+" class="plus">
+						</div>
+					</div>
+				</td>				
+				<td class="price-box">
+					<p id="update-cart-1"></p>
+				</td>
+				</tr>
+				<tr>
+				<td class="image-box">
+					<img src="images/flash-1.jpg" alt="Flash comic">
+					<div class="info-1">
+						<p>The Flash - Issue #55</p>
+					</div>
+					<div class="info-2">
+						<p>DC Comics
+						<br>
+						Joshua Williamson, Scott Kilons
+						<br>
+						2018</p>
+					</div>
+					<div class="info-3">
+						<p class="floatleft">Product Code: 79123690</p>
+						<a class="floatright" href="#">Remove</a>
+					</div>
+				</td>
+				<td class="quantity-box">
+					<div class="quantity-selector">
+						<div class="quantity buttons_added">
+							<input type="button" value="-" class="minus"><input type="number" step="1" min="1" id="quantity-input-2" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"><input type="button" value="+" class="plus">
+						</div>
+					</div>
+				</td>				
+				<td class="price-box">
+					<p id="update-cart-2"></p>
+				</td>
+				</tr>
+				<tr>
+				<td class="image-box">
+					<img src="images/black-panther-2.jpg" alt="Black Panther comic">
+					<div class="info-1">
+						<p>Black Panther - Issue #1</p>
+					</div>
+					<div class="info-2">
+						<p>Marvel Comics
+						<br>
+						Ta-Nehisi Coates, Brian Stelfreeze, Laura Martin
+						<br>
+						2016</p>
+					</div>
+					<div class="info-3">
+						<p class="floatleft">Product Code: 19034837</p>
+						<a class="floatright" href="#">Remove</a>
+					</div>
+				</td>
+				<td class="quantity-box">
+						<div class="input-group plus-minus-input">
+						<div class="quantity buttons_added">
+							<input type="button" value="-" class="minus"><input type="number" step="1" min="1" id="quantity-input-3" name="quantity" value="1" title="Qty" class="input-text qty text" size="4"><input type="button" value="+" class="plus">
+						</div>
+						</div>
+				</td>				
+				<td  class="price-box">
+					<p id="update-cart-3"></p>
+				</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="insidewrap clearfix">
+			<div id="cost-box">
+				<p class="cost-box-normal floatright">
+					<span id="cart-value"></span>
+					<br>
+					<br>
+					<span id="tax-total"></span>
+					<br>
+					<br>
+					<span id="subtotal-value"></span>
+				</p>				
+				<p class="cost-box-bold floatleft">
+					Total
+					<br>
+					Shipping
+					<br>
+					Tax
+					<br>
+					<br>
+					Subtotal
+				</p>
+				<p class="floatright" id="shipping-fee-result"></p>
+				<div id="checkout-buttons"><button>Checkout as Guest</button>
+				<p id="cost-box-or">OR</p>
+				<button id="member-button">Checkout as Member</button></div>
+			</div>
+			<div id="calculation-box">
+				<h4>Estimate your shipping fee</h4>
+				<div class="flex-container">
+					<div>
+						<h5>Country</h5>
+						<select id="country-selector">
+							<option value="default" selected>Select Your Country</option>
+							<option value="ROW">Afghanistan</option>
+							<option value="EU">Åland Islands</option>
+							<option value="EU">Albania</option>
+							<option value="ROW">Algeria</option>
+							<option value="ROW">American Samoa</option>
+							<option value="EU">Andorra</option>
+							<option value="ROW">Angola</option>
+							<option value="ROW">Anguilla</option>
+							<option value="ROW">Antarctica</option>
+							<option value="ROW">Antigua and Barbuda</option>
+							<option value="ROW">Argentina</option>
+							<option value="EU">Armenia</option>
+							<option value="ROW">Aruba</option>
+							<option value="ROW">Australia</option>
+							<option value="EU">Austria</option>
+							<option value="EU">Azerbaijan</option>
+							<option value="ROW">Bahamas</option>
+							<option value="ROW">Bahrain</option>
+							<option value="ROW">Bangladesh</option>
+							<option value="ROW">Barbados</option>
+							<option value="EU">Belarus</option>
+							<option value="EU">Belgium</option>
+							<option value="ROW">Belize</option>
+							<option value="ROW">Benin</option>
+							<option value="ROW">Bermuda</option>
+							<option value="ROW">Bhutan</option>
+							<option value="ROW">Bolivia, Plurinational State of</option>
+							<option value="ROW">Bonaire, Sint Eustatius and Saba</option>
+							<option value="EU">Bosnia and Herzegovina</option>
+							<option value="ROW">Botswana</option>
+							<option value="ROW">Bouvet Island</option>
+							<option value="ROW">Brazil</option>
+							<option value="ROW">British Indian Ocean Territory</option>
+							<option value="ROW">Brunei Darussalam</option>
+							<option value="EU">Bulgaria</option>
+							<option value="ROW">Burkina Faso</option>
+							<option value="ROW">Burundi</option>
+							<option value="ROW">Cambodia</option>
+							<option value="ROW">Cameroon</option>
+							<option value="ROW">Canada</option>
+							<option value="ROW">Cape Verde</option>
+							<option value="ROW">Cayman Islands</option>
+							<option value="ROW">Central African Republic</option>
+							<option value="ROW">Chad</option>
+							<option value="ROW">Chile</option>
+							<option value="ROW">China</option>
+							<option value="ROW">Christmas Island</option>
+							<option value="ROW">Cocos (Keeling) Islands</option>
+							<option value="ROW">Colombia</option>
+							<option value="ROW">Comoros</option>
+							<option value="ROW">Congo</option>
+							<option value="ROW">Congo, the Democratic Republic of the</option>
+							<option value="ROW">Cook Islands</option>
+							<option value="ROW">Costa Rica</option>
+							<option value="ROW">Côte d'Ivoire</option>
+							<option value="EU">Croatia</option>
+							<option value="ROW">Cuba</option>
+							<option value="ROW">Curaçao</option>
+							<option value="EU">Cyprus</option>
+							<option value="ROW">Czech Republic</option>
+							<option value="EU">Denmark</option>
+							<option value="ROW">Djibouti</option>
+							<option value="ROW">Dominica</option>
+							<option value="ROW">Dominican Republic</option>
+							<option value="ROW">Ecuador</option>
+							<option value="ROW">Egypt</option>
+							<option value="ROW">El Salvador</option>
+							<option value="ROW">Equatorial Guinea</option>
+							<option value="ROW">Eritrea</option>
+							<option value="EU">Estonia</option>
+							<option value="ROW">Ethiopia</option>
+							<option value="ROW">Falkland Islands (Malvinas)</option>
+							<option value="ROW">Faroe Islands</option>
+							<option value="ROW">Fiji</option>
+							<option value="EU">Finland</option>
+							<option value="EU">France</option>
+							<option value="ROW">French Guiana</option>
+							<option value="ROW">French Polynesia</option>
+							<option value="ROW">French Southern Territories</option>
+							<option value="ROW">Gabon</option>
+							<option value="ROW">Gambia</option>
+							<option value="EU">Georgia</option>
+							<option value="EU">Germany</option>
+							<option value="ROW">Ghana</option>
+							<option value="ROW">Gibraltar</option>
+							<option value="EU">Greece</option>
+							<option value="ROW">Greenland</option>
+							<option value="ROW">Grenada</option>
+							<option value="ROW">Guadeloupe</option>
+							<option value="ROW">Guam</option>
+							<option value="ROW">Guatemala</option>
+							<option value="ROW">Guernsey</option>
+							<option value="ROW">Guinea</option>
+							<option value="ROW">Guinea-Bissau</option>
+							<option value="ROW">Guyana</option>
+							<option value="ROW">Haiti</option>
+							<option value="ROW">Heard Island and McDonald Islands</option>
+							<option value="ROW">Holy See (Vatican City State)</option>
+							<option value="ROW">Honduras</option>
+							<option value="ROW">Hong Kong</option>
+							<option value="EU">Hungary</option>
+							<option value="EU">Iceland</option>
+							<option value="ROW">India</option>
+							<option value="ROW">Indonesia</option>
+							<option value="ROW">Iran, Islamic Republic of</option>
+							<option value="ROW">Iraq</option>
+							<option value="IE">Ireland</option>
+							<option value="ROW">Isle of Man</option>
+							<option value="ROW">Israel</option>
+							<option value="EU">Italy</option>
+							<option value="ROW">Jamaica</option>
+							<option value="ROW">Japan</option>
+							<option value="ROW">Jersey</option>
+							<option value="ROW">Jordan</option>
+							<option value="EU">Kazakhstan</option>
+							<option value="ROW">Kenya</option>
+							<option value="ROW">Kiribati</option>
+							<option value="ROW">Korea, Democratic People's Republic of</option>
+							<option value="ROW">Korea, Republic of</option>
+							<option value="ROW">Kuwait</option>
+							<option value="ROW">Kyrgyzstan</option>
+							<option value="ROW">Lao People's Democratic Republic</option>
+							<option value="EU">Latvia</option>
+							<option value="ROW">Lebanon</option>
+							<option value="ROW">Lesotho</option>
+							<option value="ROW">Liberia</option>
+							<option value="ROW">Libya</option>
+							<option value="EU">Liechtenstein</option>
+							<option value="EU">Lithuania</option>
+							<option value="EU">Luxembourg</option>
+							<option value="ROW">Macao</option>
+							<option value="EU">Macedonia, the former Yugoslav Republic of</option>
+							<option value="ROW">Madagascar</option>
+							<option value="ROW">Malawi</option>
+							<option value="ROW">Malaysia</option>
+							<option value="ROW">Maldives</option>
+							<option value="ROW">Mali</option>
+							<option value="EU">Malta</option>
+							<option value="ROW">Marshall Islands</option>
+							<option value="ROW">Martinique</option>
+							<option value="ROW">Mauritania</option>
+							<option value="ROW">Mauritius</option>
+							<option value="ROW">Mayotte</option>
+							<option value="ROW">Mexico</option>
+							<option value="ROW">Micronesia, Federated States of</option>
+							<option value="EU">Moldova, Republic of</option>
+							<option value="EU">Monaco</option>
+							<option value="ROW">Mongolia</option>
+							<option value="EU">Montenegro</option>
+							<option value="ROW">Montserrat</option>
+							<option value="ROW">Morocco</option>
+							<option value="ROW">Mozambique</option>
+							<option value="ROW">Myanmar</option>
+							<option value="ROW">Namibia</option>
+							<option value="ROW">Nauru</option>
+							<option value="ROW">Nepal</option>
+							<option value="EU">Netherlands</option>
+							<option value="ROW">New Caledonia</option>
+							<option value="ROW">New Zealand</option>
+							<option value="ROW">Nicaragua</option>
+							<option value="ROW">Niger</option>
+							<option value="ROW">Nigeria</option>
+							<option value="ROW">Niue</option>
+							<option value="ROW">Norfolk Island</option>
+							<option value="ROW">Northern Mariana Islands</option>
+							<option value="EU">Norway</option>
+							<option value="ROW">Oman</option>
+							<option value="ROW">Pakistan</option>
+							<option value="ROW">Palau</option>
+							<option value="ROW">Palestinian Territory, Occupied</option>
+							<option value="ROW">Panama</option>
+							<option value="ROW">Papua New Guinea</option>
+							<option value="ROW">Paraguay</option>
+							<option value="ROW">Peru</option>
+							<option value="ROW">Philippines</option>
+							<option value="ROW">Pitcairn</option>
+							<option value="EU">Poland</option>
+							<option value="EU">Portugal</option>
+							<option value="ROW">Puerto Rico</option>
+							<option value="ROW">Qatar</option>
+							<option value="ROW">Réunion</option>
+							<option value="EU">Romania</option>
+							<option value="EU">Russian Federation</option>
+							<option value="ROW">Rwanda</option>
+							<option value="ROW">Saint Barthélemy</option>
+							<option value="ROW">Saint Helena, Ascension and Tristan da Cunha</option>
+							<option value="ROW">Saint Kitts and Nevis</option>
+							<option value="ROW">Saint Lucia</option>
+							<option value="ROW">Saint Martin (French part)</option>
+							<option value="ROW">Saint Pierre and Miquelon</option>
+							<option value="ROW">Saint Vincent and the Grenadines</option>
+							<option value="ROW">Samoa</option>
+							<option value="EU">San Marino</option>
+							<option value="ROW">Sao Tome and Principe</option>
+							<option value="ROW">Saudi Arabia</option>
+							<option value="ROW">Senegal</option>
+							<option value="EU">Serbia</option>
+							<option value="ROW">Seychelles</option>
+							<option value="ROW">Sierra Leone</option>
+							<option value="ROW">Singapore</option>
+							<option value="ROW">Sint Maarten (Dutch part)</option>
+							<option value="EU">Slovakia</option>
+							<option value="EU">Slovenia</option>
+							<option value="ROW">Solomon Islands</option>
+							<option value="ROW">Somalia</option>
+							<option value="ROW">South Africa</option>
+							<option value="ROW">South Georgia and the South Sandwich Islands</option>
+							<option value="ROW">South Sudan</option>
+							<option value="EU">Spain</option>
+							<option value="ROW">Sri Lanka</option>
+							<option value="ROW">Sudan</option>
+							<option value="ROW">Suriname</option>
+							<option value="ROW">Svalbard and Jan Mayen</option>
+							<option value="ROW">Swaziland</option>
+							<option value="EU">Sweden</option>
+							<option value="EU">Switzerland</option>
+							<option value="ROW">Syrian Arab Republic</option>
+							<option value="ROW">Taiwan, Province of China</option>
+							<option value="ROW">Tajikistan</option>
+							<option value="ROW">Tanzania, United Republic of</option>
+							<option value="ROW">Thailand</option>
+							<option value="ROW">Timor-Leste</option>
+							<option value="ROW">Togo</option>
+							<option value="ROW">Tokelau</option>
+							<option value="ROW">Tonga</option>
+							<option value="ROW">Trinidad and Tobago</option>
+							<option value="ROW">Tunisia</option>
+							<option value="EU">Turkey</option>
+							<option value="ROW">Turkmenistan</option>
+							<option value="ROW">Turks and Caicos Islands</option>
+							<option value="ROW">Tuvalu</option>
+							<option value="ROW">Uganda</option>
+							<option value="EU">Ukraine</option>
+							<option value="ROW">United Arab Emirates</option>
+							<option value="UK">United Kingdom</option>
+							<option value="ROW">United States</option>
+							<option value="ROW">United States Minor Outlying Islands</option>
+							<option value="ROW">Uruguay</option>
+							<option value="ROW">Uzbekistan</option>
+							<option value="ROW">Vanuatu</option>
+							<option value="ROW">Venezuela, Bolivarian Republic of</option>
+							<option value="ROW">Viet Nam</option>
+							<option value="ROW">Virgin Islands, British</option>
+							<option value="ROW">Virgin Islands, U.S.</option>
+							<option value="ROW">Wallis and Futuna</option>
+							<option value="ROW">Western Sahara</option>
+							<option value="ROW">Yemen</option>
+							<option value="ROW">Zambia</option>
+							<option value="ROW">Zimbabwe</option>
+						</select>
+					</div>
+					<div id="postcode">
+						<h5>Postcode</h5>
+						<input>
+					</div>
+					<button id="calculate-button" onClick="calc()">Calculate</button>
+				</div>
+				<h5 id="coupon-code-header">Coupon Code</h5>
+				<input id="coupon-code-input">
+				<button class="floatright">Submit</button>
+			</div>
+			<div id="clock-caption">We'll save your cart for the next:
+				<div id="clockdiv"></div>
+			</div>
+		</div>
+		
+		<div id="footer1">
+			<div class="insidewrap">
+				<div class="flex-container">
+					<figure class="floatleft">
+						<img src="images/lock.png" alt="Lock" />
+						<figcaption>Secure Checkout <div class="figcap-small">SSL Secured Payment</div></figcaption>
+					</figure>				
+					<figure>
+						<img src="images/truck.png" alt="Delivery truck" />
+						<figcaption>Free Delivery <div class="figcap-small">With orders over €14.99</div></figcaption>
+					</figure>				
+					<figure class="floatright">
+						<img src="images/smiley.png" alt="Smiley face" />
+						<figcaption>Trusted Store <div class="figcap-small">Satisfaction guaranteed</div></figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div id="footer2">
+			<div class="insidewrap">
+				<div class="flex-container">
+					<div>
+						<h4>Social Media</h4>
+						<div id="footer-social-media">
+							<img src="images/facebook-icon.png" alt="Facebook symbol" />
+							<img src="images/twitter-icon.png" alt="Twitter symbol" />
+							<img src="images/instagram-icon.png" alt="Instagram symbol" id="no-margin"/>		
+						</div>
+					</div>
+					<div>
+						<h4>My Sub-City</h4>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Order Status</a></li>
+							<li><a href="#">Recommendations</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4>Newsletter</h4>
+						<form>
+							<input type="text" placeholder="example@email.com" name="email">
+						</form>
+						<button>Sign Up</button>
+					</div>
+					<div>
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Forum</a></li>
+							<li><a href="#">Categories</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>					
+					<div>
+						<h4>Help</h4>
+						<ul>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Help Centre</a></li>
+							<li><a href="#">Customer Service</a></li>
+						</ul>
+					</div>					
+					<div>
+						<h4>Legal</h4>
+						<ul>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Returns Policy</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Cookies</a></li>
+						</ul>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<div id="footer3">
+			<div class="insidewrap clearfix">
+				<a href="#" class="floatright">Copyright &copy; 2019, Sub-City Comics Dublin. Powered by Shopify</a>
+			</div>
+		</div>
+		<script src="js/searchbar.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/owl-jquery.js"></script>
+		<script src="js/quantity-selector.js"></script>
+		<script src="js/quantity-price-calculator.js"></script>
+		<script src="js/timer.js"></script>
+		<script>var $j = jQuery.noConflict();</script> 	
+	</body>
+</html>

@@ -1,0 +1,603 @@
+/* Just thought I'd leave a note here saying that I'm aware that a lot of this code is a bit messy and there's definitely more efficient ways of doing things, but I had a deadline to meet and this was the best I could do within the timeframe. Also the mobile version of the site is optimised for iPhone 6/7/8, so there are probably some styling issues with other screen sizes **/
+
+
+/* GLOBAL STYLES **/
+
+.insidewrap {
+	width: 960px;
+	color: white;
+	margin: 0 auto;
+}
+
+.carouselwrap {
+	width: 840px;
+	margin: 0 auto;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.no-desktop {
+	display: none;
+}
+
+.no-mobile {
+	display: block;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+body{ 
+	font-family: 'Corbel', sans-serif;
+}
+
+h1 {
+	font-family: good-times, sans-serif;
+}
+
+h2 {
+	font-family: 'Corbel', sans-serif;
+	font-weight: bold;
+	font-size: 27px;
+	color: #393939;
+	background-image: linear-gradient(120deg, #2bb1b3 0%, #ffffff 100%);
+	background-repeat: no-repeat;
+	background-size: 100% 6px;
+	background-position: 0px 32px;
+	height: 40px;
+	margin-bottom: 20px;
+	margin-top: 28px;
+}
+
+.owl-carousel a {
+	color: #0066c0;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.owl-carousel a:hover {
+	text-decoration: underline;
+}
+
+.price-text {
+	color: #ac2121 !important;
+	text-decoration: none !important;
+}
+
+
+/* HEADER1 STYLES **/
+
+#header1 {
+	margin-top: 10px;
+}
+
+#header1 #social-media {
+	margin-top: 46px;
+	float: left;
+	margin-left: 100px;
+}
+
+#header1 #social-media img {
+	margin-right: 34px;
+	width: 52px;
+}
+
+#search-bar {
+	float: right;
+	margin-top: 56px;
+}
+
+#searchBar {
+	border: 2px solid #c3c3c3;
+	font-size: 14px;
+	color: #282828;
+	padding: 10px;
+	outline: none;
+	width: 260px;
+	height: 27px;
+}
+
+#searchBtn {
+	height: 27.5px;
+	border: none;
+	margin-left: -2px;
+	background-color: #2bb1b3;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
+}
+
+/* HEADER2 STYLES **/
+
+#header2 ul {
+	display: flex;
+}
+
+#header2 li {
+	padding-right: 31px;
+	white-space: nowrap;
+}
+
+#header2 {
+	background-color: #2bb1b3;
+}
+
+#header2 a {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 66px;
+	color: #ffffff; 
+	text-decoration: none;
+}
+
+#header2 img {
+	padding-top: 21px;
+	height: 45px;
+	width: 28px;
+}
+
+#header2 h1 {
+	font-size: 30px;
+	line-height: 66px;
+}
+
+#cart-li {
+	padding-right: 0 !important;
+}
+
+/* BANNER STYLES **/
+
+.main-banner {
+	width: 960px;
+	height: 305px;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+	margin-top: 38px;
+}
+
+.main-banner .imgban {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	transition: all ease-in-out 500ms;
+	-webkit-transition: all ease-in-out 500ms;
+	-moz-transition: all ease-in-out 500ms;
+}
+
+.main-banner #imgban3 {
+	background-image: url(../images/imgban3.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main-banner #imgban2 {
+	background-image: url(../images/imgban2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main-banner #imgban1 {
+	background-image: url(../images/imgban1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.imgbanbtn {
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 133px;
+	z-index: 2000;
+	opacity: 0.7;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.imgbanbtn:hover {
+	opacity: 0.9;
+}	
+
+.imgbanbtn-prev {
+	left: 10px;
+	background-image: url(../images/arrow-left.png);
+	background-size: 35%;
+	background-position: center;
+	background-repeat: no-repeat; 
+}
+
+.imgbanbtn-next {
+	right: 10px;
+	background-image: url(../images/arrow-right.png);
+	background-size: 35%;
+	background-position: center;
+	background-repeat: no-repeat; 
+}
+
+.main-banner .imgban-box p {
+	width: 420px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 25px;
+	margin-right: 60px;
+}
+
+.main-banner .imgban-box h1 {
+	width: 420px;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 19px;
+	margin-bottom: 13px;
+	line-height: 37px;
+}
+
+.main-banner .imgban-box .CalltoActionBtn {
+	height: 40px;
+	width: 146px;
+	background-color: #6dd8da;
+	font-weight: bold;
+	font-family: 'Corbel', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	color: white;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	top: 16px;
+	left: 150px;
+}
+
+.main-banner .imgban-box a {
+	text-decoration: none;
+	color: white;
+}
+
+	
+.main-banner #imgban1 .imgban-box {
+	float: right;
+}
+
+.main-banner #imgban3 .imgban-box {
+	float: right;
+}
+
+.main-banner #imgban2 .imgban-box {
+	margin-left: 60px;
+}
+
+.main-banner #imgban2 .CalltoActionBtn {
+	left: 135px;
+}
+
+/* HALF PRICE CAROUSEL STYLES **/
+
+#half-price {
+	width: 420px;
+}
+
+#half-price-carousel {
+	margin-bottom: 20px;
+}
+
+#pop-vinyl-carousel .product-img img {
+	height: 185px;
+}
+
+.CarouselBtn .CarouselBtnNxt {
+	float: right;
+	width: 40px;
+	height: 40px;
+	background-color: #2bb1b3;
+	outline: none;
+	border-radius: 50%;
+	z-index: 2000;
+	cursor: pointer;
+	background-image: url(../images/arrow-right-white.png);
+	background-size: 35%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 80px;
+}
+
+.CarouselBtn .CarouselBtnPrv {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: #2bb1b3;
+	outline: none;
+	border-radius: 50%;
+	z-index: 2000;
+	cursor: pointer;
+	background-image: url(../images/arrow-left-white.png);
+	background-size: 35%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 80px;
+}
+
+.owl-carousel {
+	margin-top: -40px;
+}
+
+.product-img img {
+	height: 202px;
+	width: 131.5px;
+}
+
+.star-img {
+	  margin: 10px auto;
+  }
+
+ 
+ #staff-picks-carousel .carouselwrap, 
+ #pop-vinyl-carousel .carouselwrap, 
+ #merch-carousel .carouselwrap, 
+ #best-sellers-carousel .carouselwrap  {
+	 width: 560px;
+ }
+
+/* FBA STYLES **/
+
+#homepage-firsthalf {
+	width: 30%;
+}
+
+#fba-box {
+	width: 265px;
+	height: 809px;
+	border: 1px solid #c9c9c9;
+	border-radius: 20px;
+}
+
+h3 {
+	font-family: 'Corbel', sans-serif;
+	font-weight: bold;
+	color: #2bb1b3;
+	font-size: 19px;
+	padding: 15px 15px;
+}
+
+#fba-box ul {
+	columns: 2;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+#fba-box label {
+	margin-left: 6px;
+}
+
+#fba-box li {
+	color: #7d7d7d;
+	font-size: 17px;
+	margin-bottom: 8px;
+}
+
+#slider-range {
+	width: 230px;
+	height: 8px;
+	margin-left: 17px;
+}
+
+#slider-range input {
+	margin-top: 30px;
+	width: 80px;
+	padding: 5px 10px;
+	color: #d3d3d3;
+	font-family: 'Corbel', sans-serif;
+}
+
+#slider-range input:in-range {
+	color: black;
+}
+
+#min_price {
+	margin-left: 30px;
+	margin-right: 16px;
+}
+
+#max_price {
+	margin-left: 16px;
+}
+
+#slider-range p {
+	font-family: 'Corbel', sans-serif;
+	font-size: 30px;
+	position: absolute;
+	color: #7d7d7d;
+}
+
+#euro {
+	top: 29px;
+}
+
+#hyphen {
+	left: 122px;
+	top: 22px;
+	font-size: 40px !important; 
+}
+
+#FBABtn {
+	padding: 10px 25px;
+	background-color: #2bb1b3;
+	font-weight: bold;
+	font-family: 'Corbel', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	color: white;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	position: relative;
+	top: 80px;
+	left: 85px;
+}
+
+#twitter {
+	width: 265px;
+	padding-top: 10px;
+	height: 575px;
+	border: 1.5px solid #c9c9c9;
+	border-radius: 20px;
+	margin-top: 35px;
+}
+
+/* CAROUSEL HEADER STYLES **/
+
+#fba-header {
+	width: 260px;
+}
+
+#homepage-secondhalf {
+	width: 70%;
+}
+
+#popvinyl-header {
+	width: 330px;
+}
+
+#staff-header {
+	width: 240px;
+}
+
+#merch-header {
+	width: 380px;
+	margin-bottom: 5px;
+}
+
+#best-sellers-header {
+	width: 360px;
+}
+
+/* FOOTER1 STYLES **/
+
+#footer1 {
+	background-color: #2bb1b3;
+	margin-top: 40px;
+}
+
+#footer1 figure, #footer1 img {
+	display: flex;
+	align-items: center;
+}
+
+#footer1 img {
+	padding: 15px 0px;
+}
+
+#footer1 figcaption {
+	text-transform: uppercase;
+	font-family: 'Corbel', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+#footer1 .figcap-small {
+	font-size: 13px;
+	margin-top: 5px;
+}
+ 
+#footer1 br {
+	line-height: 105%
+}
+
+/* FOOTER2 STYLES **/
+
+#footer2 {
+	background-color: #777777;
+}
+
+h4 {
+	font-size: 19px;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-bottom: 18px;
+}
+
+#footer2  img {
+	height: 38px;
+	margin-right: 14px;
+}
+
+#no-margin {
+	margin-right: 0px !important;
+}
+
+#footer2 a {
+	color: white;
+	text-decoration: none;
+}
+
+#footer2 li {
+	margin-bottom: 8px;
+}
+
+#footer2 ul {
+	margin-bottom: 24px;
+}
+
+#footer2 input {
+	width: 145px;
+	height: 23px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	padding: 10px;
+}
+
+#footer2 button {
+	padding: 7px 18px;
+	background-color: #2bb1b3;
+	font-weight: bold;
+	font-family: 'Corbel', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	border-radius: 13px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	margin-top: 12px;
+}
+
+
+/* FOOTER3 STYLES **/
+
+#footer3 {
+	background-color: #535353;
+}
+
+#footer3 a {
+	color: #a1a1a1;
+	text-decoration: none;
+	margin: 8px 0px;
+}
+
+#toggle, .nav label {
+	display: none;
+}
+
+

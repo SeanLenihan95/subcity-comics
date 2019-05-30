@@ -1,0 +1,512 @@
+/* TABLET STYLES **/
+
+@media only screen and (max-width: 786px) {
+ 
+	 .CarouselBtnPrv {
+		 margin-right: 30px;
+	 }
+	
+	.insidewrap {
+		width: 680px;
+		margin: 0 auto;
+	}
+	
+	h2 {
+		font-size: 22px;
+		margin-top: 22px;
+		margin-bottom: 15px;
+		background-position: 0px 28px;
+		background-size: 100% 5.5px;
+	}
+	
+	#header1 #search-bar {
+		position: relative;
+		float: right;
+		margin: 0px;
+		top: 45px;
+	}
+	
+	#header1 #searchBar {
+		width: 200px;
+		font-size: 12px;
+	}
+	
+	#header1 #searchBtn {
+		font-size: 12px;
+	}
+	
+	#main-logo {
+		height: 130px;
+		width: 185px;
+	}
+	
+	#header1 #social-media img {
+		width: 37px;
+		margin-right: 20px;
+	}
+	
+	#header1 #social-media {
+		margin: 0px;
+		position: relative;
+		top: 40px;
+		left: 45px;
+	}
+	
+	#header2 a {
+		font-size: 14px;
+		line-height: 60px;
+	}
+	
+	#header2 h1 {
+		font-size: 22px;
+		line-height: 60px;
+	}
+	
+	#header2 img {
+		padding-top: 0px;
+		position: relative;
+		top: 18px;
+		height: 20px;
+		width: 24px;
+	}
+	
+	#header2 li {
+		padding-right: 20px;
+	}
+	
+	#top-nav figcaption a {
+		font-size: 19px;
+		margin-left: 10px;
+	}
+
+	#top-nav {
+		font-size: 19px;
+		padding-bottom: 3px;
+	}
+
+	#top-nav img {
+		width: 11px;
+		height: 100%;
+		margin-top: 1px;
+	}
+
+	#main-table h1 {
+		font-size: 24px;
+	}
+
+	#main-table a {
+		margin-top: 0;
+	}
+
+	.info-1 p {
+		font-size: 17px;
+	}
+
+	#third-product-info3 {
+		margin-top: 42px !important;
+	}
+	
+	#clock-caption {
+		display: none;
+	}
+
+	#footer1 {
+		margin-top: 25px;
+	}
+	
+	#footer1 figcaption {
+		font-size: 15px;
+	}
+	
+	#footer1 #figcap-small {
+		font-size: 10px;
+		margin-top: 4px;
+	}
+	
+	#footer1 img {
+		width: 40px;
+		height: 68px;
+		padding: 15px 0px;
+	}
+	
+	#footer2 h4 {
+		font-size: 15px;
+		margin-top: 18px;
+		margin-bottom: 11px;
+	}
+	
+	#footer2 input {
+		width: 110px;
+		height: 10px;
+		font-size: 9px;
+	}
+	
+	#footer2 a {
+		font-size: 13px;
+	}
+	
+	#footer2 li {
+		margin-bottom: 4px;
+	}
+
+	#footer2 ul {
+		margin-bottom: 18px;
+	}
+
+	#footer2 button {
+		padding: 4px 10px;
+		margin-top: 10px;
+	}	
+	
+	#footer2 button a {
+		font-size: 12px;
+	}
+
+	#footer2 img {
+		height: 30px;
+		margin-right: 12px;
+	}
+	
+	#footer3 a {
+		font-size: 11px;
+		margin: 5px 0px;
+	}
+
+	#half-price {
+		width: 320px;
+	}
+	
+	#popvinyl-header {
+		width: 240px;
+	}
+
+	#staff-header {
+		width: 180px;
+	}
+
+	#merch-header {
+		width: 260px;
+	}
+
+	#best-sellers-header {
+		width: 240px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	.insidewrap {
+		width: 93%;
+	}
+		
+	.no-desktop {
+		display: block;
+	}
+	
+	.no-mobile {
+		display: none;
+	}
+	
+	#header1 {
+		display: none;
+	}
+	
+	.main-header {
+		width: 86%;
+	}
+	
+	#header2 h1 {
+		font-size: 25px;
+		float: left;
+		color: white;
+		font-weight: bold;
+		line-height: 65px;
+		margin-top: 2px;
+		text-align: center;
+	}
+	
+	#social-media,
+	#search-bar {
+		display: none;
+	}
+	
+	#header2 ul {
+		display: block;
+	}
+	
+	#header2 img {
+		margin-right: 20px;
+		height: 100%;
+		width: 30px;
+		margin-top: 14px;
+	}
+	
+	.nav {
+		border-bottom: 1px solid #EAEAEB;
+		text-align: right;
+		height: 70px;
+		line-height: 70px;
+	}
+	
+	.menu {
+		text-align: center;
+		width: 67%;
+		display: none;
+	}
+	
+	.menu a {
+		line-height: 7px;
+		display: block;
+		border-bottom: 1px solid #EAEAEB;
+		text-align: center;
+		float: none;
+	}
+	
+	.menu a img {
+		display: none;
+	}
+	
+	#no-border {
+		border-bottom: none;
+	}
+	
+	.nav label {
+		margin-right: 20px;
+		font-size: 26px;
+		display: block;
+		width: 20px;
+		height: 100%;
+		float: right;
+	}
+	
+	#toggle {
+		display: none;
+	}
+	
+	#toggle:checked + .menu {
+		display: block;
+	}
+	
+	#header2 a { 
+		font-size: 18px;
+	}
+	
+	#top-nav {
+		margin-top: 15px;
+	}
+
+	#top-nav figcaption a, #top-nav p {
+		font-size: 14px !important;
+	}
+
+	#top-nav figcaption {
+		display: inline-block;
+	}
+	
+	#top-nav #help {
+		margin-right: 10px;
+	}
+
+	#top-nav #help, #top-nav #phone-number {
+		margin-top: 3px;
+	}
+	
+	#top-nav img {
+		width: 10px;
+		height: 100%;
+	}
+	
+	#top-nav p {
+		margin-top: 0.5px;
+	}
+	
+	#main-table {
+		margin-top: 20px;
+	}
+	
+	#main-table h1 {
+		font-size: 17px;
+	}
+	
+	#main-table a {
+		font-size: 14px;
+		margin-top: 2px;
+	}
+	
+	.price-box {
+		padding: 0 10px;
+	}
+
+	.image-box img {
+		width: 100px;
+		height: 154px;
+		margin: 15px 15px 0 15px;
+		position: relative;
+		left: 8%;
+		transform: translate(-8%, 0);	
+	}
+	
+	.image-box p {
+		text-align: center;
+		margin: 0 6px;
+		font-size: 15px;
+	}
+	
+	.info-1 {
+		margin-top: 185px !important;
+		margin-bottom: 10px;
+	}
+	
+	.info-2, .info-3 {
+		display: none;
+	}
+
+	.quantity {
+		margin-left: 0px;
+		margin-right: 9px;	
+		margin-top: 0;
+	}
+	
+	.quantity-box {
+		vertical-align: middle;
+	}
+	
+	.quantity.buttons_added  {
+		margin-left: 12px;
+	}
+	
+	.price-box {
+		vertical-align: middle;
+	}
+	
+	.price-box p {
+		position: relative;
+		bottom: 200;
+		top: 0;
+	}
+	
+	#main-table th {
+		font-size: 16px;
+	}
+	
+	#cost-box {
+		margin: 0 auto;
+		margin-top: 20px;
+		float: none;
+		width: 100%;
+	}
+	
+	#cost-box p {
+		font-size: 15px;
+	}
+	
+	#shipping-fee-result {
+		margin-right: 6px;
+	}
+	
+	#clock-caption {
+		display: none;
+	}
+	
+	#calculation-box {
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+	
+	#postcode {
+		display: none;
+	}
+	
+	#calculation-box select, #coupon-code-input {
+		width: 230px !important;
+	}
+	
+	#calculation-box {
+		top: 20px;
+	}
+	
+	#calculation-box h4 {
+		font-size: 16px;
+		width: 180px;
+	}
+	
+	#calculate-button {
+		padding: 1px 10px;
+	}
+	
+	#checkout-buttons {
+		margin-top: 140px;
+		text-align: center;
+	}
+	
+	#footer1 {
+		padding-top: 15px;
+	}
+	
+	#footer1  img {
+		display: none;
+	}
+	
+	#footer1 figcaption {
+		display: none;
+	}
+	
+	#footer1 #figcap-small {
+		display: none;
+	}
+	
+	#footer2 .flex-container {
+		flex-direction: column;
+		margin: 0 auto;
+		justify-content: center;
+		text-align: center;
+	}
+	
+	#footer2 {
+		padding: 15px 0 5px;
+	}
+	
+	#footer2 img {
+		margin-top: 5px;
+		width: 30px;
+		height: 100%;
+	}
+	
+	#footer2 h4 {
+		font-size: 17px;
+		margin: 10px 0 10px 0;
+	}
+	
+	#footer2 a {
+		font-size: 14px;
+	}
+	
+	#footer2 ul, #footer2 img, #footer2 button {
+		margin-bottom: 15px;
+	}	
+	
+	#footer2 input {
+		width: 150px;
+		height: 25px;
+		border-radius: 12px;
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	
+	#footer2 button {
+		margin-top: 10px;
+		padding: 8px 18px;
+	}
+	
+	#footer2 button a {
+		font-size: 15px;
+	}
+	
+	#footer3 a {
+		font-size: 11px;
+		padding: 0px 5px 0 8px;
+	}
+	
+}

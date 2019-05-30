@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>Welcome | Sub-City Comics</title>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Sean Lenihan" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Sub-City Comics homepage" />
+		<meta name="keywords" content="comics, sub-city, irish, order, reliable, cheap." />
+		<meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+		<link type="text/css" rel="stylesheet" href="css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="css/index.css" />
+		<link type="text/css" rel="stylesheet" href="css/index-responsive.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Corbel" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />	
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="https://use.typekit.net/jwp3qzx.css" />	
+	</head>
+	<body>
+		<div id="header1" class="insidewrap clearfix">
+			<a href="index.html"><img src="images/final-logo2.jpg" id="main-logo" alt="Sub-City Comics logo" class="floatleft" width= "224" /></a>			
+			<div id="social-media">
+				<a href="https://www.facebook.com/subcity.comics.5/"><img src="images/facebook-icon.png" alt="Facebook symbol" /></a>
+				<a href="https://twitter.com/subcity_comics?lang=en"><img src="images/twitter-icon.png" alt="Twitter symbol" /></a>
+				<a href="https://www.instagram.com/subcity_comics/?hl=en"><img src="images/instagram-icon.png" alt="Instagram symbol" /></a>					
+			</div>
+			<div id="search-bar">
+				<form action="search.php" method="post">
+					<input type="text" id="searchBar" placeholder="" value="Search..." maxlength="30" autocomplete="off" onMouseDown="active();" onBlur="inactive();" /><input type="submit" id="searchBtn" value="Search" />
+				</form>
+			</div>
+		</div>
+		<div id="header2">
+			<div class="insidewrap clearfix">
+				<h1 class="floatleft main-header">Sub-City Comics</h1>
+				<div class="nav">
+					<label for="toggle">&#9776;</label>
+					<input type="checkbox" id="toggle" />
+					<div class="menu">
+					<ul class="floatright">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Forums</a></li>
+						<li><a href="gallery.html">Categories</a></li>
+						<li><a href="testimonials.html">Contact</a></li>
+						<li><a href="testimonials.html" id="no-border">Log in</a></li>
+						<li id="cart-li"><a href="cart.html"><img src="images/cart.png" alt="Cart symbol" class="no-mobile" /></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-banner insidewrap clearfix" id="main-banner">
+			<button class="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev"></button>
+			<div class="imgban" id="imgban3">
+				<div class="imgban-box">
+					<h1>Overwatch Pop Vinyls Sale</h1>
+					<p>To celebrate the Storm Rising Overwatch event, we're slashing the price of all our Overwatch pop vinyls. Everything from Ashe to Zenyetta is now up to half off! Collect them all and build your collection whilst these discounted prices are still around!</p>
+					<button class="CalltoActionBtn">Shop Now</button>				
+				</div>
+			</div>
+			<div class="imgban" id="imgban2">
+				<div class="imgban-box">
+					<h1>We're in the Endgame Now</h1>
+					<p>Prepare for the ultimate showdown in superhero movie history with special deals on all Infinity War related releases! See how the comics handled Thanos's quest to control the universe and build your own Infinity War collection. Hurry while offers last!</p>
+					<button class="CalltoActionBtn">Check It Out</button>						
+				</div>
+			</div>
+			<div class="imgban" id="imgban1">
+				<div class="imgban-box">
+					<h1>Get 10% Off Your Next Purchase</h1>
+					<p>Keep up to date with all Sub-City related events, promotions and sales and get a 10% discount off your next purchase by signing up to our member’s newsletter. Just submit your e-mail address and we’ll send you your exclusive code. Hurry while offer lasts!</p>
+					<div id="calltoaction"><button class="CalltoActionBtn">Sign Up</button></div>				
+				</div>			
+			</div>
+			<button class="imgbanbtn imgbanbtn-next" id="imgbanbtn-next"></button>
+		</div>
+		<div class="insidewrap">
+			<h2 id="half-price">Half Price On Selected Titles!</h2>
+			<div class="CarouselBtn insidewrap clearfix">
+				<div class="CarouselBtnPrv CarouselBtnPrv-1"></div>
+				<div class="CarouselBtnNxt CarouselBtnNxt-1"></div>
+			</div>
+		</div>
+		<div id="half-price-carousel">
+			<div class="carouselwrap">
+				<div class="owl-carousel owl-1 owl-theme">
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/black-panther.jpg" /></a>
+						<img src="images/4-star.png" class="star-img" alt="Star rating" />
+						<a href="product.html">Black Panther - Omnibus</a>
+						<br>
+						<a href="product.html" class="price-text">€34.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/darth-vader.jpg" /></a>
+						<img src="images/5-star.png" class="star-img" alt="Star rating" />
+						<a href="product.html">Darth Vader - Vol.1, Issue #4</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>				
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/spawn.png" /></a>
+						<img src="images/3-star.png" class="star-img" alt="Star rating" />
+						<a href="product.html">The Death of Spawn - Issue #1</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>					
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/wonder-woman.jpg" /></a>
+						<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Wonder Woman - Issue #45</a>
+						<br>
+						<a href="product.html" class="price-text">€10.99</a>						
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/amazing-spiderman1.jpg" /></a>
+						<img src="images/5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Amazing Spider-Man - Issue #19</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>				
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/harley-1.jpg" /></a>
+						<img src="images/4.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Harley Quinn - Issue #23</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/old-man-logan.jpg" /></a>
+						<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Old Man Logan - Issue #34</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/batman-1.jpg" /></a>
+						<img src="images/4.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Batman - Vol. 2, Issue #38</a>
+						<br>
+						<a href="product.html" class="price-text">€10.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/damage.jpg" /></a>
+						<img src="images/3-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Damage - Vol. 1, Issue #1</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/falcon.jpg" /></a>
+						<img src="images/3-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Falcon - Vol. 3, Issue #6</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/ant-man-wasp.jpg" /></a>
+						<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Ant-Man and the Wasp - Issue #4</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/captain-america.jpg" /></a>
+						<img src="images/4.5-star.png" class="star-img" alt="Star rating" />
+						<a href="product.html">Captain America - Issue #695</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="insidewrap clearfix">
+			<div id ="homepage-firsthalf" class="floatleft">
+				<h2 id="fba-header">Filter by Attribute</h2>
+				<div id="fba-box">
+					<h3>Product Type</h3>
+					<ul>
+						<li><form><input type="checkbox" id="comic-1" name="comic-1" value="Comic"><label for="comic-1">Comic</label></form></li>
+						<li><form><input type="checkbox" id="gn-1" name="gn-1" value="Graphic Novel"><span style="font-size:14px"><label for="gn-1">Graphic Novel</label></span></form></li>
+						<li><form><input type="checkbox" id="manga-1" name="manga-1" value="Manga"><label for="manga-1">Manga</label></form></li>
+						<li><form><input type="checkbox" id="clothing-1" name="clothing-1" value="Clothing"><label for="clothing-1">Clothing</label></form></li>
+						<li><form><input type="checkbox" id="af-1" name="af-1" value="Action Figure"><span style="font-size:14px"><label for="af-1">Action Figure</label></span></form></li>
+						<li><form><input type="checkbox" id="pv-1" name="pv-1" value="Pop Vinyl"><label for="pv-1">Pop Vinyl</label></form></li>
+						<li><form><input type="checkbox" id="poster-1" name="poster-1" value="Poster"><label for="poster-1">Poster</label></form></li>
+						<li><form><input type="checkbox" id="other-1" name="other-1" value="Other"><label for="other-1">Other</label></form></li>
+					</ul>
+					<h3>Genre</h3>
+					<ul>
+						<li><form><input type="checkbox" id="action-1" name="action-1" value="Action"><label for="action-1">Action</label></form></li>
+						<li><form><input type="checkbox" id="adventure-1" name="adventure-1" value="Adventure"><label for="adventure-1">Adventure</label></form></li>
+						<li><form><input type="checkbox" id="fantasy-1" name="fantasy-1" value="Fantasy"><label for="fantasy-1">Fantasy</label></form></li>
+						<li><form><input type="checkbox" id="romance-1" name="romance-1" value="Romance"><label for="romance-1">Romance</label></form></li>
+						<li><form><input type="checkbox" id="superhero-1" name="superhero-1" value="Superhero"><label for="superhero-1">Superhero</label></form></li>
+						<li><form><input type="checkbox" id="sci-fi-1" name="sci-fi-1" value="Science Fiction"><label for="sci-fi-1" style="font-size:14px">Science Fiction</label></form></li>
+						<li><form><input type="checkbox" id="horror-1" name="horror-1" value="Horror"><label for="horror-1">Horror</label></form></li>
+						<li><form><input type="checkbox" id="crime-1" name="crime-1" value="Crime"><label for="crime-1">Crime</label></form></li>
+						<li><form><input type="checkbox" id="war-1" name="war-1" value="War"><label for="war-1">War</label></form></li>
+						<li><form><input type="checkbox" id="nf-1" name="nf-1" value="Non-Fiction"><label for="nf-1" style="font-size:16px">Non-Fiction</label></form></li>
+						<li><form><input type="checkbox" id="humour-1" name="humour-1" value="Humour"><label for="humour-1">Humour</label></form></li>
+						<li><form><input type="checkbox" id="western-1" name="western-1" value="Western"><label for="western-1">Western</label></form></li>
+					</ul>
+					<h3>Company</h3>
+					<ul>
+						<li><form><input type="checkbox" id="marvel-1" name="marvel-1" value="Marvel"><label for="marvel-1">Marvel</label></form></li>
+						<li><form><input type="checkbox" id="dc-1" name="dc-1" value="DC"><label for="dc-1">DC</label></form></li>
+						<li><form><input type="checkbox" id="dh-1" name="dh-1" value="Dark Horse"><label for="dh-1">Dark Horse</label></form></li>
+						<li><form><input type="checkbox" id="idw-1" name="idw-1" value="IDW Publishing"><label for="idw-1"><span style="font-size:14px">IDW Publishing</span></label></form></li>
+						<li><form><input type="checkbox" id="image-1" name="image-1" value="Image"><label for="image-1">Image</label></form></li>
+						<li><form><input type="checkbox" id="valiant-1" name="valiant-1" value="Valiant"><label for="valiant-1">Valiant</label></form></li>
+						<li><form><input type="checkbox" id="blizzard-1" name="blizzard-1" value="Blizzard"><label for="blizzard-1">Blizzard</label></form></li>
+						<li><form><input type="checkbox" id="disney-1" name="disney-1" value="Disney"><label for="disney-1">Disney</label></form></li>
+						<li><form><input type="checkbox" id="rockstar-1" name="rockstar-1" value="Rockstar"><label for="rockstar-1">Rockstar</label></form></li>
+						<li><form><input type="checkbox" id="wb-1" name="wb-1" value="Warner Bros."><label for="wb-1"><span style="font-size:15px">Warner Bros.</span></label></form></li>
+						<li><form><input type="checkbox" id="nintendo-1" name="nintendo-1" value="Nintendo"><label for="nintendo-1">Nintendo</label></form></li>
+						<li><form><input type="checkbox" id="bethesda-1" name="bethesda-1" value="Bethesda"><label for="bethesda-1">Bethesda</label></form></li>
+					</ul>
+					<h3>Price</h3>
+					<div id="slider-range">
+						<p id="euro">€</p>
+						<p id="hyphen">-</p>
+						<input type="number" min="1" step="1" value="0" id="min_price" />
+						<input type="number" min=0 step="1" max="49" value="50" id="max_price" />
+					</div>
+					<button id="FBABtn">Search</button>
+				</div>
+				<div id="twitter"><a class="twitter-timeline" data-width="265" data-height="552" href="https://twitter.com/SubCity_Comics?ref_src=twsrc%5Etfw">Tweets by SubCity_Comics</a><script async src="https://platform.twitter.com/widgets.js"></script></div>
+			</div>
+			<div id="homepage-secondhalf" class="floatright">
+			<h2 id="popvinyl-header">Popular in Pop Vinyls</h2>
+					<div class="CarouselBtn clearfix">
+						<div class="CarouselBtnPrv CarouselBtnPrv-2"></div>
+						<div class="CarouselBtnNxt CarouselBtnNxt-2"></div>
+					</div>
+					<div id="pop-vinyl-carousel">
+					<div class="carouselwrap">
+						<div class="owl-carousel owl-2 owl-theme">
+							<div class="item">
+								<a href="product.html" class="product-img"><img alt="Product image" src="images/cyborg.jpg" /></a>
+								<img src="images/4-star.png" class="star-img" alt="Star rating" />
+								<a href="product.html">Cyborg - Justice League</a>
+								<br>
+								<a href="product.html" class="price-text">€34.99</a>
+							</div>
+							<div class="item">
+								<a href="product.html" class="product-img"><img alt="Product image" src="images/axl.jpg" /></a>
+								<img src="images/5-star.png" class="star-img" alt="Star rating" />
+								<a href="product.html">Axl Rose - Guns N' Roses</a>
+								<br>
+								<a href="product.html" class="price-text">€9.99</a>				
+							</div>
+							<div class="item">
+								<a href="product.html" class="product-img"><img alt="Product image" src="images/sym.jpg" /></a>
+								<img src="images/3-star.png" class="star-img" alt="Star rating" />
+								<a href="product.html">Symettra - Overwatch</a>
+								<br>
+								<a href="product.html" class="price-text">€9.99</a>					
+							</div>
+							<div class="item">
+								<a href="product.html" class="product-img"><img alt="Product image" src="images/kratos.jpg" /></a>
+								<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+								<a href="product.html">Kratos - God of War</a>
+								<br>
+								<a href="product.html" class="price-text">€10.99</a>						
+							</div>
+							<div class="item">
+								<a href="product.html" class="product-img"><img alt="Product image" src="images/lara.jpg" /></a>
+								<img src="images/5-star.png" class="star-img" alt="Star rating">
+								<a href="product.html">Lara Croft - Tomb Raider</a>
+								<br>
+								<a href="product.html" class="price-text">€9.99</a>				
+							</div>
+							<div class="item">
+								<a href="product.html" class="product-img"><img alt="Product image" src="images/cap.jpg" /></a>
+								<img src="images/4.5-star.png" class="star-img" alt="Star rating" />
+								<a href="product.html">Captain America - Avengers: Infinity War</a>
+								<br>
+								<a href="product.html" class="price-text">€9.99</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 id="staff-header">Top Staff Picks</h2>
+				<div class="CarouselBtn clearfix">
+					<div class="CarouselBtnPrv CarouselBtnPrv-3"></div>
+					<div class="CarouselBtnNxt CarouselBtnNxt-3"></div>
+				</div>
+				<div id="staff-picks-carousel">
+					<div class="carouselwrap">
+				<div class="owl-carousel owl-3 owl-theme">
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/daredevil-1.jpg" /></a>
+						<img src="images/4-star.png" class="star-img" alt="Star rating" />
+						<a href="product.html">Daredevil vs. Captain America</a>
+						<br>
+						<a href="product.html" class="price-text">€6.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/antman-1.jpg" /></a>
+						<img src="images/5-star.png" class="star-img" alt="Star rating" />
+						<a href="product.html">Astonishing Ant-Man - Issue #4</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>				
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/captain-marvel-1.jpg" /></a>
+						<img src="images/3-star.png" class="star-img" alt="Star rating" />
+						<a href="product.html">Captain Marvel - Issue #1</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>					
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/avengers-1.jpg" /></a>
+						<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">The Avengers - Issue #45</a>
+						<br>
+						<a href="product.html" class="price-text">€10.99</a>						
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/terrifics.jpg" /></a>
+						<img src="images/5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">The Terrifics - Issue #19</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>				
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/harley-2.jpg" /></a>
+						<img src="images/4.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Harley Quinn - Issue #42</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/west-coast-avengers.jpg" /></a>
+						<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">West Coast Avengers - Issue #34</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/shazam-1.jpg" /></a>
+						<img src="images/4.5-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Shazam, Issue #3</a>
+						<br>
+						<a href="product.html" class="price-text">€10.99</a>
+					</div>
+					<div class="item">
+						<a href="product.html" class="product-img"><img alt="Product image" src="images/uncanny-xmen.jpg" /></a>
+						<img src="images/3-star.png" class="star-img" alt="Star rating">
+						<a href="product.html">Uncanny X-Men, Issue #5</a>
+						<br>
+						<a href="product.html" class="price-text">€9.99</a>
+					</div>
+				</div>
+				</div>
+				</div>
+				<h2 id="merch-header">Popular in Merchandise</h2>
+				<div class="owl-nav CarouselBtn clearfix">
+					<div class="CarouselBtnPrv CarouselBtnPrv-4"></div>
+					<div class="CarouselBtnNxt CarouselBtnNxt-4"></div>
+				</div>
+				<div id="merch-carousel">
+					<div class="carouselwrap">
+					<div class="owl-carousel owl-4 carouselwrap owl-theme">
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/deadpool-controller.jpg" /></a>
+							<img src="images/4-star.png" class="star-img" alt="Star rating" />
+							<a href="product.html">Deadpool Controller Holder</a>
+							<br>
+							<a href="product.html" class="price-text">€34.99</a>
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/cap-wallet.jpg" /></a>
+							<img src="images/5-star.png" class="star-img" alt="Star rating" />
+							<a href="product.html">Captain America Wallet</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>				
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/batman-mug.jpg" /></a>
+							<img src="images/3-star.png" class="star-img" alt="Star rating" />
+							<a href="product.html">Classic Batman Mug</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>					
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/overwatch-poster.jpg" /></a>
+							<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+							<a href="product.html">Overwatch Poster</a>
+							<br>
+							<a href="product.html" class="price-text">€10.99</a>						
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/flash-bag.jpg" /></a>
+							<img src="images/5-star.png" class="star-img" alt="Star rating">
+							<a href="product.html">Flash School Bag</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>				
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/ff-cap.jpg" /></a>
+							<img src="images/4.5-star.png" class="star-imghalf" alt="Star rating">
+							<a href="product.html">Fatal Fury Cap</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/got-sword.jpg" /></a>
+							<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+							<a href="product.html">Game of Thrones Sword Replica</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>
+						</div>
+					</div>
+					</div>
+				</div>
+				<h2 id="best-sellers-header">All Time Best-Sellers</h2>
+				<div class="CarouselBtn clearfix">
+					<div class="CarouselBtnPrv CarouselBtnPrv-5"></div>
+					<div class="CarouselBtnNxt CarouselBtnNxt-5"></div>
+				</div>
+				<div id="best-sellers-carousel">
+					<div class="carouselwrap">
+					<div class="owl-carousel owl-5 carouselwrap owl-theme">
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/venom.jpg" /></a>
+							<img src="images/4-star.png" class="star-img" alt="Star rating" />
+							<a href="product.html">Venom First Host - Issue #4</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/wolverine-2.jpg" /></a>
+							<img src="images/5-star.png" class="star-img" alt="Star rating" />
+							<a href="product.html">Return of the Wolverine, Issue #2</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>				
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/hellboy.jpg" /></a>
+							<img src="images/3-star.png" class="star-img" alt="Star rating" />
+							<a href="product.html">Hellboy: Darkness Calls - Issue #1</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>					
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/infinity-1.jpg" /></a>
+							<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+							<a href="product.html">The Infinity Gauntlet - Omnibus</a>
+							<br>
+							<a href="product.html" class="price-text">€39.99</a>						
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/bloodbourne.jpg" /></a>
+							<img src="images/5-star.png" class="star-img" alt="Star rating">
+							<a href="product.html">Bloodbourne - Issue #2</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>				
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/avengers-2.jpg" /></a>
+							<img src="images/4.5-star.png" class="star-imghalf" alt="Star rating">
+							<a href="product.html">The Avengers - Issue #21</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/captain-marvel-2.jpg" /></a>
+							<img src="images/3.5-star.png" class="star-img" alt="Star rating">
+							<a href="product.html">Captain Marvel - Issue #3</a>
+							<br>
+							<a href="product.html" class="price-text">€9.99</a>
+						</div>
+						<div class="item">
+							<a href="product.html" class="product-img"><img alt="Product image" src="images/monsters.jpg" /></a>
+							<img src="images/4.5-star.png" class="star-imghalf" alt="Star rating">
+							<a href="product.html">Monstress, Issue #38</a>
+							<br>
+							<a href="product.html" class="price-text">€10.99</a>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div id="footer1">
+			<div class="insidewrap">
+				<div class="flex-container">
+					<figure class="floatleft">
+						<img src="images/lock.png" alt="Lock" />
+						<figcaption>Secure Checkout <div class="figcap-small">SSL Secured Payment</div></figcaption>
+					</figure>				
+					<figure>
+						<img src="images/truck.png" alt="Delivery truck" />
+						<figcaption>Free Delivery <div class="figcap-small">With orders over €14.99</div></figcaption>
+					</figure>				
+					<figure class="floatright">
+						<img src="images/smiley.png" alt="Smiley face" />
+						<figcaption>Trusted Store <div class="figcap-small">Satisfaction guaranteed</div></figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+		<div id="footer2">
+			<div class="insidewrap">
+				<div class="flex-container">
+					<div>
+						<h4>Social Media</h4>
+						<div id="footer-social-media">
+							<a href="https://www.facebook.com/subcity.comics.5/"><img class="center-images" src="images/facebook-icon.png" alt="Facebook symbol" /></a>
+							<a href="https://twitter.com/subcity_comics?lang=en"><img class="center-images" src="images/twitter-icon.png" alt="Twitter symbol" /></a>
+							<a href="https://www.instagram.com/subcity_comics/?hl=en"><img class="center-images" src="images/instagram-icon.png" alt="Instagram symbol" id="no-margin"/></a>		
+						</div>
+					</div>
+					<div>
+						<h4>My Sub-City</h4>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Order Status</a></li>
+							<li><a href="#">Recommendations</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4>Newsletter</h4>
+						<form>
+							<input type="text" placeholder="example@email.com" name="email">
+						</form>
+						<button>Sign Up</button>
+					</div>
+					<div>
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Forum</a></li>
+							<li><a href="#">Categories</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>					
+					<div>
+						<h4>Help</h4>
+						<ul>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="#">Help Centre</a></li>
+							<li><a href="#">Customer Service</a></li>
+						</ul>
+					</div>					
+					<div>
+						<h4>Legal</h4>
+						<ul>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Returns Policy</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Cookies</a></li>
+						</ul>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<div id="footer3">
+			<div class="insidewrap clearfix">
+				<a href="#" class="floatright">Copyright &copy; 2019, Sub-City Comics Dublin. Powered by Shopify</a>
+			</div>
+		</div>
+		<script src="js/searchbar.js"></script>
+		<script src="js/banner.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/owl-jquery.js"></script>
+		<script src="js/price-slider.js"></script>
+	</body>
+</html>
